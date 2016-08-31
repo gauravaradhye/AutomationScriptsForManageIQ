@@ -1,0 +1,6 @@
+#!/bin/bash
+git fetch upstream
+git rebase -i upstream master/master
+bin/update
+PARALLEL=true bundle exec rake test:vmdb:setup
+PARALLEL=true bundle exec rake test:vmdb
