@@ -1,0 +1,3 @@
+#!/bin/bash
+PARALLEL=true bundle exec rake test:vmdb:setup
+PARALLEL=true bundle exec rake test:vmdb
